@@ -1,29 +1,46 @@
+# 99乘法表
 for i in range(1, 10):
     for j in range(1, i+1):
         print(str(i)+"*"+str(j)+"="+str(i*j), end=" ")
     print();
 
-i=1000
+i=1
 
-if i>1:
-    print(333)
-elif i<100:
-    print(666)
+if i==1:
+    print(1)
+elif i==2:
+    print(2)
 else:
-    print(111)
+    print(3)
 
-#print("what's your name?")
+# 命令行输入输出
 '''
+print("what's your name?")
 name = input();
-#print("your name is ", name)
+print("your name is ", name)
 '''
 
-
-
+# 函数定义
 def sayHello():
     print('Hello Python!')
 
 sayHello()
 
-a = [0 for i in range(0,5)]
+# 列表
+a = [1, 2, 3]
 print(a)
+
+# 元组 不可更改
+t = (1, 2, 3)
+print(t)
+
+# 字典
+d = {
+    'sex':'男',
+    'age':21
+}
+print(d)
+
+t = (1, 2, a, d)
+t[2][0] = 0
+print(t)
