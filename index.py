@@ -21,8 +21,8 @@ print("your name is ", name)
 '''
 
 # 函数定义
-def sayHello():
-    print('Hello Python!')
+def sayHello(name='zz', age=30):
+    print('Hello Python! My name is %s, My age is %d' %(name, age))
 
 sayHello()
 
@@ -44,3 +44,10 @@ print(d)
 t = (1, 2, a, d)
 t[2][0] = 0
 print(t)
+
+# 集合（去重）
+s = set('ababcdede')
+print(s)
+
+s = set([1,2,2,3])
+print(s)
